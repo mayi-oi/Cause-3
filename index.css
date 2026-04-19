@@ -1,0 +1,344 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+}
+
+body {
+      background-image: url(Res/Bild/Hinterground/bg.jpg);
+      font-family: 'Google-sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.Hauptdiv {
+      margin: auto;
+      width: 90%;
+      max-width: 1200px;
+      cursor: default;
+      text-align: center;
+      padding: 20px 0;
+}
+
+.logo img {
+      cursor: pointer;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto 20px;
+}
+
+.Title {
+      background-image: url(Res/Bild/Hinterground/majed-swan-jG2zZSpkamU-unsplash.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: clamp(60px, 15vw, 240px) 20px;
+      border-radius: 28px;
+      color: #ffffff;
+      font-family: 'Google-sans', sans-serif;
+      text-align: center;
+      margin-bottom: 20px;
+}
+
+.Title h2 {
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      margin-bottom: 10px;
+      line-height: 1.2;
+}
+
+.Title p {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      margin-bottom: 20px;
+}
+
+.Schnellzurgrieft {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+}
+
+.Studenplan,
+.Vertretung {
+      padding: 14px 24px;
+      border: none;
+      border-radius: 8px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 1rem;
+      min-width: 160px;
+}
+
+.Studenplan {
+      background-color: #ffa273;
+      color: #ffffff;
+}
+
+.Studenplan:hover {
+      transform: scale(1.05);
+      background-color: #ff8b51;
+}
+
+.Vertretung {
+      background-color: #ffffff;
+      color: #000000;
+}
+
+.Vertretung:hover {
+      transform: scale(1.05);
+      color: #ffffff;
+      background-color: #ff4d43;
+}
+
+.Hauptspot {
+      display: flex;
+      gap: 15px;
+      border-radius: 18px;
+      font-family: 'Google-sans', sans-serif;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+}
+
+.Hauptspot>div {
+      flex: 1 1 calc(33.333% - 10px);
+      min-width: 280px;
+      border-radius: 18px;
+      padding: 20px;
+      text-align: left;
+}
+
+.Hauptspot h2 {
+      font-size: clamp(1.2rem, 2.5vw, 1.75rem);
+      margin-bottom: 15px;
+      text-decoration: underline;
+}
+
+.Aktulles {
+      color: #ffffff;
+      background-color: #ff8543;
+}
+
+.Aktulles h3 {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+}
+
+.Zurdenken {
+      color: #ff8543;
+      border: 2px solid #ff8543;
+      transition: all 0.34s ease;
+}
+
+.Zurdenken:hover {
+      color: #ffffff;
+      background-color: #ff8543;
+}
+
+.termin {
+      color: #ff8543;
+      border: 2px solid #ff8543;
+}
+
+.Spotlight-bild {
+      border: 2px solid #ff8543;
+      border-radius: 18px;
+      padding: 20px;
+      color: #ff8543;
+      font-family: 'Google-sans', sans-serif;
+      transition: all 0.32s ease;
+      margin-bottom: 20px;
+      text-align: center;
+}
+
+.Spotlight-bild h2 {
+      text-decoration: underline;
+      margin-bottom: 15px;
+      text-align: center;
+}
+
+.Spotlight-bild img {
+      border-radius: 12px;
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      display: block;
+      margin: 0 auto 10px;
+      transition: all 0.52s ease;
+}
+
+.Spotlight-bild img:hover {
+      box-shadow: 0 0 0 3px #ffffff, 0 0 0 5px #ff8543;
+      transform: scale(1.02);
+}
+
+.Spotlight-bild:hover {
+      color: #ffffff;
+      background-color: #ff8543;
+}
+
+.Partner {
+      border: 2px solid #ff8543;
+      border-radius: 18px;
+      padding: 20px;
+      color: #ff8543;
+      font-family: 'Google-sans', sans-serif;
+      transition: all 0.32s ease;
+      margin-bottom: 20px;
+}
+
+.Partner h2 {
+      text-align: left;
+      text-decoration: underline;
+      margin-bottom: 15px;
+}
+
+.Partner-img {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+}
+
+.Partner-img img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      object-fit: contain;
+}
+
+.footer {
+      font-family: 'Jetbrains', 'Courier New', monospace;
+      font-size: 12px;
+      text-align: right;
+      color: #333;
+      line-height: 1.6;
+}
+
+.footer footer,
+.footer p {
+      cursor: pointer;
+      display: inline-block;
+      padding: 5px;
+      transition: color 0.2s;
+}
+
+.footer footer:hover,
+.footer p:hover {
+      color: #ff8543;
+      text-decoration: underline;
+}
+
+/* Mobile Anpassungen */
+@media (max-width: 768px) {
+      .Hauptdiv {
+            width: 95%;
+            padding: 10px 0;
+      }
+
+      .Title {
+            border-radius: 16px;
+            padding: 140px 15px;
+      }
+
+      .Title h2 {
+            font-size: 1.5rem;
+      }
+
+      .Hauptspot>div {
+            flex: 1 1 100%;
+            min-width: unset;
+      }
+
+      .Partner-img img {
+            max-width: 45%;
+      }
+
+      .footer {
+            text-align: center;
+      }
+}
+
+@media (max-width: 480px) {
+
+      .Studenplan,
+      .Vertretung {
+            width: 100%;
+            min-width: unset;
+      }
+
+      .Schnellzurgrieft {
+            flex-direction: column;
+            width: 100%;
+      }
+
+      .Partner-img img {
+            max-width: 80%;
+      }
+}
+
+/* Fonts */
+@font-face {
+      font-family: Google-sans;
+      src: url(Res/Font/Google_Sans/static/GoogleSans-Regular.ttf);
+      font-weight: 400;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: Google-sans;
+      src: url(Res/Font/Google_Sans/static/GoogleSans-Medium.ttf);
+      font-weight: 500;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: Google-sans;
+      src: url(Res/Font/Google_Sans/static/GoogleSans-SemiBold.ttf);
+      font-weight: 600;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: Google-sans;
+      src: url(Res/Font/Google_Sans/static/GoogleSans-Bold.ttf);
+      font-weight: 700;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: Montserrat;
+      src: url(Res/Font/Montserrat/static/Montserrat-Regular.ttf);
+      font-weight: 400;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: Montserrat;
+      src: url(Res/Font/Montserrat/static/Montserrat-Medium.ttf);
+      font-weight: 500;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: Montserrat;
+      src: url(Res/Font/Montserrat/static/Montserrat-SemiBold.ttf);
+      font-weight: 600;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: Montserrat;
+      src: url(Res/Font/Montserrat/static/Montserrat-Bold.ttf);
+      font-weight: 700;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: Jetbrains;
+      src: url(Res/Font/JetBrains_Mono/static/JetBrainsMono-SemiBold.ttf);
+      font-weight: 600;
+      font-display: swap;
+}
