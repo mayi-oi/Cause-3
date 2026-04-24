@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +10,7 @@
 </head>
 
 <body>
+      <div class="version"> WORK IN PROGESS <br>Baut nummer: #3<br>Version: 0.1 [in-dev]</div>
       <div class="Hauptdiv">
             <div class="Navdiv">
                   <div class="logo">
@@ -18,22 +18,39 @@
                               <img src="Res/Bild/Logo/logo-kopf.jpg">
                         </a>
                   </div>
-
             </div>
+
             <div class="Title">
                   <h2>Wilkommen zur neuen web redsign!</h2>
                   <p>Redisgn von: koa!</p>
                   <div class="Schnellzurgrieft">
-                        <button class="Vertretung">Vertretungsplan</button>
+                        <button class="Vertretung" onclick="window.location.href='login.html'">Vertretungsplan</button>
                         <button class="Studenplan">Studenplan</button>
+                        <button class="Über-uns">Über uns</button>
+                  </div>
+                  <br>
+                  <div class="infomation">
+                        <a>Kontakt</a>
+                        <a href="Impressung.html">Impressung</a>
+                        <a href="Download.html">Herunterladen</a>
+                        <a>Feedback</a>
                   </div>
             </div>
             <br>
             <div class="Hauptspot">
                   <div class="Aktulles">
                         <h2>Aktulles</h2>
-                        <h3>Neue Studenplan sind da!</h3>
-                        <p>Den Studenplan sind endlich da bitte gehe sie auf Vertretungplan zu sehen!</p>
+                        <div class="scroll">
+                              <h3>Neue Studenplan sind da!</h3>
+                              <p>Den Studenplan sind endlich da bitte gehe sie auf Vertretungplan zu sehen!</p>
+                              <br>
+                              <h3>Längere Texten lol</h3>
+                              <p>Um Passwörter in PHP sicher zu speichern, sollte man ab Version 5.5 die integrierte Password Hashing API verwenden und niemals Klartext oder veraltete Algorithmen wie MD5 nutzen.  
+                                    Die Kernfunktionen sind password_hash() zur Erstellung des Hashes bei der Registrierung und password_verify() zur Überprüfung beim Login.</p>
+                              <br>
+                              <h3>Versorgung beim Elternsprechtag</h3>
+                              <p>Für das leibliche Wohl am Elternsprechtag ist gesorgt. Es besteht die Möglichkeit, einen Mittagssnack sowie Kaffee und Kuchen am Nachmittag zu kaufen.</p>
+                        </div>
                   </div>
                   <div class="Zurdenken">
                         <h2>Zum Nachdenken... [täglich]</h2>
@@ -60,8 +77,9 @@
             <div class="Partner">
                   <h2>Unsere Partner!</h2>
                   <div class="Partner-img">
-                        <img src="https://ev-sekundarschule.de/images/esm-logo-1.jpg">
-                        <img src="https://ev-sekundarschule.de/images/EKM-KK-H-W.gif">
+                        <img src="https://ev-sekundarschule.de/images/esm-logo-1.jpg" onclick="window.location.href='https://www.schulstiftung-ekm.de/'">
+                        <img src="https://ev-sekundarschule.de/images/EKM-KK-H-W.gif" onclick="window.location.href='https://www.kirchenkreis-haldensleben-wolmirstedt.de/'">
+                        <img src="Res/Bild/Logo/besondere-logo-schwarz.png" onclick="window.location.href='https://pancake-web-eight.vercel.app'">
                   </div>
             </div>
             <br>
@@ -70,6 +88,7 @@
                   </footer>
                   <p style="line-height: 0;" onclick="window.location.href='https://pancake-web-eight.vercel.app/'">
                         designer by koa [mayi-oi]</p>
+                  <p onclick="window.location.href='Admin.html'">Admin</p>
             </div>
       </div>
 </body>

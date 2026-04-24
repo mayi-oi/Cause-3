@@ -1,0 +1,205 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+}
+
+body {
+      background-image: url(Res/Bild/Hinterground/bg.jpg);
+      font-family: 'Google-sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+::-webkit-scrollbar {
+      display: none;
+}
+
+.version {
+      position: fixed;
+      left: 15px;
+      bottom: 20px;
+      color: #00000023;
+      font-family: Jetbrains;
+      font-size: 0.85rem;
+      cursor: default;
+}
+
+.Hauptdiv {
+      margin: auto;
+      width: 90%;
+      max-width: 1200px;
+      cursor: default;
+      text-align: center;
+      padding: 20px 0;
+}
+
+.Hauptspot>div {
+      flex: 1 1 calc(33.333% - 10px);
+      min-width: 280px;
+      border-radius: 18px;
+      padding: 20px;
+      text-align: left;
+}
+
+.Hauptspot h2 {
+      font-size: clamp(1.2rem, 2.5vw, 1.75rem);
+      margin-bottom: 15px;
+      text-decoration: underline;
+}
+
+.logo img {
+      cursor: pointer;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto 20px;
+}
+
+.Download-center {
+      padding: 20px;
+      border: solid 2px #ff8543;
+      border-radius: 14px;
+      text-align: left;
+      color: #ff8543;
+      transition: all 0.28s ease;
+}
+
+.Download-center h2 {
+      text-decoration: underline;
+}
+
+.Download-center:hover {
+      transform: scale(1.02);
+}
+
+.sub-nav {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      gap: 8px;
+}
+
+.sub-nav a {
+      padding: 8px;
+      border-radius: 8px;
+      box-shadow: transparent 0 0 0 3px;
+      background-color: transparent;
+
+      color: #ff8543;
+      font-size: 1rem;
+
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.18s ease;
+}
+
+.sub-nav a:hover {
+      color: #ffffff;
+      box-shadow: #ffffff 0 0 0 3px;
+      background-color: #ff8543;
+      text-decoration: underline;
+}
+
+.footer {
+      font-family: 'Jetbrains', 'Courier New', monospace;
+      font-size: 12px;
+      text-align: right;
+      color: #333;
+      line-height: 1.6;
+}
+
+.footer footer,
+.footer p {
+      cursor: pointer;
+      display: inline-block;
+      padding: 5px;
+      transition: color 0.2s;
+}
+
+.footer footer:hover,
+.footer p:hover {
+      color: #ff8543;
+      text-decoration: underline;
+}
+
+/* Mobile Anpassungen */
+@media (max-width: 768px) {
+      .version  {
+            bottom: 1rem;
+      }
+
+      .Hauptdiv  {
+            width: 95%;
+            padding: 10px 0;
+      }
+
+      .sub-nav {
+            align-items: left;
+            justify-content: left;
+            display: grid;
+            gap: 2px;
+      }
+}
+
+/* Fonts */
+@font-face {
+      font-family: Google-sans;
+      src: url(Res/Font/Google_Sans/static/GoogleSans-Regular.ttf);
+      font-weight: 400;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: Google-sans;
+      src: url(Res/Font/Google_Sans/static/GoogleSans-Medium.ttf);
+      font-weight: 500;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: Google-sans;
+      src: url(Res/Font/Google_Sans/static/GoogleSans-SemiBold.ttf);
+      font-weight: 600;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: Google-sans;
+      src: url(Res/Font/Google_Sans/static/GoogleSans-Bold.ttf);
+      font-weight: 700;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: Montserrat;
+      src: url(Res/Font/Montserrat/static/Montserrat-Regular.ttf);
+      font-weight: 400;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: Montserrat;
+      src: url(Res/Font/Montserrat/static/Montserrat-Medium.ttf);
+      font-weight: 500;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: Montserrat;
+      src: url(Res/Font/Montserrat/static/Montserrat-SemiBold.ttf);
+      font-weight: 600;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: Montserrat;
+      src: url(Res/Font/Montserrat/static/Montserrat-Bold.ttf);
+      font-weight: 700;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: Jetbrains;
+      src: url(Res/Font/JetBrains_Mono/static/JetBrainsMono-SemiBold.ttf);
+      font-weight: 600;
+      font-display: swap;
+}
